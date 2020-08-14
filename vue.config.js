@@ -1,4 +1,8 @@
 module.exports = {
   lintOnSave: false,
-  transpileDependencies: ["vuetify"]
-};
+  transpileDependencies: ["vuetify"],
+  devServer: {
+    port: 8081,
+    disableHostCheck: true,
+  }
+}
