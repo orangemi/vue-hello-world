@@ -1,6 +1,6 @@
 <template lang='pug'>
 v-app
-  v-app-bar(app='' color='primary' dark='')
+  v-app-bar(app color='primary' dark)
     .d-flex.align-center
       v-img.shrink.mr-2(
         alt='Vuetify Logo'
@@ -23,17 +23,18 @@ v-app
       v-icon mdi-open-in-new
 
   v-main
-    hello-world
+    h1 This is Root App
+    router-view
 </template>
 
 <script lang='ts'>
 import { VApp, VImg, VAppBar, VSpacer, VIcon, VBtn } from 'vuetify/lib'
 import { Vue, Component, Prop } from 'vue-property-decorator'
-import HelloWorld from "./HelloWorld.vue"
+// import HelloWorld from "./HelloWorld.vue"
 
 @Component({
   components: {
-    HelloWorld,
+    // HelloWorld,
     VApp,
     VImg,
     VAppBar,

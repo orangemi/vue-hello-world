@@ -1,6 +1,6 @@
-import { expect } from 'chai'
+import { strict as assert } from 'assert'
 import { shallowMount } from '@vue/test-utils'
-import HelloWorld from '@/components/HelloWorld.vue'
+import HelloWorld from '../src/views/HelloWorld.vue'
 
 describe('HelloWorld.vue', () => {
   it('renders props.msg when passed', () => {
@@ -8,6 +8,6 @@ describe('HelloWorld.vue', () => {
     const wrapper = shallowMount(HelloWorld, {
       propsData: { msg }
     })
-    expect(wrapper.text()).to.include(msg)
+    assert.ok(wrapper.text().includes(msg))
   })
 })
