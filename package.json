@@ -5,7 +5,7 @@
   "scripts": {
     "build": "NODE_OPTIONS=--openssl-legacy-provider vue-cli-service build",
     "dev": "NODE_OPTIONS=--openssl-legacy-provider vue-cli-service serve",
-    "serve": "NODE_OPTIONS=--openssl-legacy-provider vue-cli-service serve",
+    "serve": "nano-server 5000 dist",
     "test:unit": "NODE_OPTIONS=--openssl-legacy-provider vue-cli-service test:unit",
     "lint": "NODE_OPTIONS=--openssl-legacy-provider vue-cli-service lint"
   },
@@ -38,6 +38,7 @@
     "eslint": "^8",
     "eslint-plugin-prettier": "^3",
     "eslint-plugin-vue": "^7",
+    "nano-server": "^0.5.4",
     "prettier": "~2.7.1",
     "sass": "~1.30.0",
     "sass-loader": "~10.1.0",
