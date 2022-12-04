@@ -17,6 +17,11 @@
     "paths": {
       "@/*": ["src/*"]
     },
+    "plugins": [
+      {
+        "name": "@volar/vue-language-plugin-pug",
+      },
+    ]
   },
   "include": [
     "src/**/*.ts",
