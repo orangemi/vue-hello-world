@@ -6,12 +6,12 @@
 
 // Plugins
 import { loadFonts } from './webfontloader'
-import vuetify from './vuetify'
+import { vuetifyApp } from './vuetify'
 
 // Types
 import type { App } from 'vue'
 
 export function registerPlugins (app: App) {
   loadFonts()
-  app.use(vuetify)
+  app.use(vuetifyApp)
 }

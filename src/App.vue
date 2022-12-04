@@ -1,11 +1,11 @@
-<template>
-  <v-app>
-    <v-main>
-      <HelloWorld />
-    </v-main>
-  </v-app>
+<template lang="pug">
+v-app
+  v-main
+    Demo
+    Helloworld
 </template>
 
 <script setup lang="ts">
-  import HelloWorld from '@/components/HelloWorld.vue'
+  import Demo from '@/views/demo.vue'
+  import Helloworld from '@/views/HelloWorld.vue'
 </script>
