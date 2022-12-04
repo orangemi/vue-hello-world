@@ -1,11 +1,10 @@
 <template lang="pug">
 v-app
+  navigation
   v-main
-    Demo
-    Helloworld
+    router-view
 </template>
 
 <script setup lang="ts">
-  import Demo from '@/views/demo.vue'
-  import Helloworld from '@/views/HelloWorld.vue'
+import Navigation from '@/views/navigation.vue'
 </script>
