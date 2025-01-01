@@ -8,12 +8,14 @@
 import App from './App.vue'
 
 // Composables
-import { createApp } from 'vue'
+import { createApp, h, provide } from 'vue'
 
 // Plugins
 import { registerPlugins } from '@/plugins'
 
-const app = createApp(App)
+const app = createApp({
+  render:() => h(App as any),
+})
 
 registerPlugins(app)
 

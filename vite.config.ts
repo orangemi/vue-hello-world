@@ -31,6 +31,13 @@ export default defineConfig({
     ],
   },
   server: {
-    port: 3000,
+    host: '127.0.0.1',
+    port: 3003,
+    // proxy: {
+    //   '/api': {
+    //     target: 'http://127.0.0.1:3001',
+    //     // rewrite: p => p.replace(/^\/api/, ''),
+    //   },
+    // },
   },
 })
